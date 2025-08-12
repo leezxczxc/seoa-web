@@ -1,0 +1,37 @@
+.main-container {
+  display: flex; /* 요소들을 유연하게 배치 */
+  flex-direction: column; /* 요소들을 세로로 나열 */
+  align-items: center; /* 가운데 정렬 */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main-photo img {
+  width: 100%;
+  max-width: 350px; /* 사진 최대 너비 */
+  border-radius: 12px; /* 사진 모서리를 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 은은한 그림자 효과 */
+  margin-bottom: 20px;
+}
+
+.main-text h1 {
+  font-size: 2rem; /* 폰트 크기 */
+  margin: 10px 0;
+  color: #333;
+}
+
+.main-text h2 {
+    color: #555;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  color: #e85a71; /* 포인트 색상 */
+  font-weight: bold;
+}
+
+.welcome-message {
+    margin-top: 30px;
+    line-height: 1.8; /* 줄 간격 */
+    color: #4A4A4A;
+}

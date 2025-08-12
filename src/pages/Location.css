@@ -1,0 +1,50 @@
+.location-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* 다른 섹션과 구분을 위해 배경색 추가 */
+}
+
+.location-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 600px; /* 지도가 너무 커지지 않도록 */
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.map-image:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.location-info {
+  margin-top: 25px;
+}
+
+.location-info .venue-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.location-info .address {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.location-info .phone-number {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.location-info .notice {
+  font-size: 0.9rem;
+  color: #e85a71;
+  line-height: 1.6;
+}
