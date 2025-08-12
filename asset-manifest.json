@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/seoa-web/static/css/main.31b4df9f.css",
+    "main.js": "/seoa-web/static/js/main.31cc6b09.js",
+    "index.html": "/seoa-web/index.html",
+    "main.31b4df9f.css.map": "/seoa-web/static/css/main.31b4df9f.css.map",
+    "main.31cc6b09.js.map": "/seoa-web/static/js/main.31cc6b09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31b4df9f.css",
+    "static/js/main.31cc6b09.js"
+  ]
+}
