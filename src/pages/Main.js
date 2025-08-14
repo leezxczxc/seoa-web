@@ -1,15 +1,12 @@
 import React from 'react';
 import './Main.css'; // 방금 만든 CSS 파일을 가져옵니다.
 
-// public 폴더에 저장할 대표 이미지 파일 이름입니다.
-const mainPhoto = '/main-baby.jpg'; 
-
 function Main() {
   return (
     <div className="main-container">
       {/* 대표 사진 */}
       <div className="main-photo">
-        <img src={mainPhoto} alt="대표 이미지" />
+        <img src='https://lh3.googleusercontent.com/pw/AP1GczNFo9gGfJ4DMS1J_K5PIB5O3NNaF_5kr7IxE9oNp1VO_S5KECokNSDgSs5OY9nYlwsBTnAVH_HqS4lPbUiDut8bkly8vlFSSi8fW9TNyfUKijQEaWekGGSPzAejWaST5FQ5ewu7xIUhY2wuy8KSmKNv5A=w1080-h721-s-no-gm?authuser=0' alt="대표 이미지" />
       </div>
 
       {/* 환영 문구 */}
