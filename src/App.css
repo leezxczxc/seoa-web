@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  background-color: #FEEAEC;
+  background-image: url('/public/bg_party.png');
+  background-repeat: repeat;
+  color: #333;
+}
+
+h1, h2 {
+  color: #E85A71;
+  font-weight: 700;
+}
+
+.photo-item {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo-item:hover {
+  transform: rotate(2deg) scale(1.05);
+}

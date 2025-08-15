@@ -5,6 +5,45 @@
   text-align: center;
   padding: 40px 20px;
 }
+/* 사진과 프레임을 감싸는 컨테이너 */
+.main-photo-container {
+  position: relative; /* 자식인 프레임이 이 안을 기준으로 움직이도록 설정 */
+  width: 100%;
+  max-width: 350px; /* 사진의 최대 크기 */
+  margin-bottom: 20px;
+  /* 여기에 border-radius가 있으면 안 됩니다! */
+}
+
+/* 프레임 역할을 하는 바깥 div */
+.photo-frame {
+  /* 1. 프레임 이미지를 배경으로 지정 */
+  background-size: contain; /* 프레임이 잘리지 않도록 설정 */
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* 2. 안에 들어올 아기 사진을 중앙에 배치하기 위한 flex 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 3. 프레임의 전체 크기 지정 */
+  width: 350px;
+  height: 350px;
+  max-width: 90vw;
+  max-height: 90vw;
+  margin-bottom: 20px;
+}
+
+/* 프레임 안에 들어가는 아기 사진 img */
+.baby-photo-inside {
+  /* 4. 프레임의 투명한 영역에 맞게 크기 조절 (80%는 예시이며 조절 가능) */
+  width: 80%;
+  height: 80%;
+  
+  /* 5. 아기 사진을 원형으로 만듦 */
+  border-radius: 50%;
+  object-fit: cover; /* 이미지가 찌그러지지 않고 원을 꽉 채우도록 설정 */
+}
 
 .main-photo img {
   width: 100%;

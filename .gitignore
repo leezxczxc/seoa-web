@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 node_modules
+
+# 배포 전 실행 (해당 세션에서 배포 키 변경. gh-pages 라이브러리는 키에 암호 있으면 제대로 동작 안 함. 임시로 암호 없는 키로 배포)
+## $env:GIT_SSH_COMMAND = "ssh -o IdentitiesOnly=yes -i C:/Users/SeHeon/.ssh/id_ed25519_leezxczxc_gmail_deploy"

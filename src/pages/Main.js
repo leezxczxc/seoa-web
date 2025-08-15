@@ -1,19 +1,25 @@
-import React from 'react';
-import './Main.css'; // 방금 만든 CSS 파일을 가져옵니다.
+// src/pages/Main.js
 
+import React from 'react';
+import './Main.css';
+import mainPhoto from '../assets/main-baby.png';
 function Main() {
   return (
     <div className="main-container">
-      {/* 대표 사진 */}
-      <div className="main-photo">
-        <img src='https://lh3.googleusercontent.com/pw/AP1GczNFo9gGfJ4DMS1J_K5PIB5O3NNaF_5kr7IxE9oNp1VO_S5KECokNSDgSs5OY9nYlwsBTnAVH_HqS4lPbUiDut8bkly8vlFSSi8fW9TNyfUKijQEaWekGGSPzAejWaST5FQ5ewu7xIUhY2wuy8KSmKNv5A=w1080-h721-s-no-gm?authuser=0' alt="대표 이미지" />
+      {/* 👇 이 부분을 수정합니다. */}
+      <div className="main-photo-container">
+      <div className="photo-frame">
+        <img src={mainPhoto} alt="대표 이미지" className="baby-photo-inside" />
+      </div>
+        {/* <img src={mainPhoto} alt="대표 이미지" className="main-photo-image" />
+        <img src={framePhoto} alt="사진 프레임" className="main-photo-frame" /> */}
       </div>
 
-      {/* 환영 문구 */}
+      {/* 환영 문구 (기존과 동일) */}
       <div className="main-text">
         <h2>초대합니다</h2>
         <h1>서아의 첫 번째 생일</h1>
-        <p>2026년 8월 22일 토요일, 오후 12:00</p>
+        <p>2025년 9월 21일 일요일, 오후 12:00</p>
       </div>
 
       <div className="welcome-message">
