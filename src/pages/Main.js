@@ -1,19 +1,30 @@
+// src/pages/Main.js
+
 import React from 'react';
 import './Main.css';
-import mainPhoto from '../assets/main-baby.png';
-// 1. 새로운 프레임 이미지를 import 합니다.
-import framePhoto from '../assets/doodle-frame.png'; 
+import mainVideo from '../assets/baby-main.mp4'; 
+import framePhoto from '../assets/main-frame.png'; 
 
 function Main() {
   return (
     <div className="main-container">
+      {/* 1. 비디오와 프레임을 겹치기 위한 컨테이너 */}
       <div className="main-photo-container">
+        {/* 2. 비디오를 먼저 배치합니다. */}
+        <video 
+          src={mainVideo}
+          className="baby-video" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          title="아기 서아 영상"
+        />
+        {/* 3. 프레임 이미지를 덧씌울 별도의 div를 만듭니다. */}
         <div 
-          className="photo-frame" 
+          className="photo-frame-overlay" 
           style={{ backgroundImage: `url(${framePhoto})` }}
-        >
-          <img src={mainPhoto} alt="대표 이미지" className="baby-photo-inside" />
-        </div>
+        ></div>
       </div>
 
       <div className="main-text">
