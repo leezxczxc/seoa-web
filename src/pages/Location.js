@@ -1,5 +1,3 @@
-// src/pages/Location.js
-
 import React from 'react';
 import './Location.css';
 
