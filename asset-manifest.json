@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/seoa-web/static/css/main.18fb201e.css",
-    "main.js": "/seoa-web/static/js/main.7579dd6e.js",
+    "main.css": "/seoa-web/static/css/main.c598f17f.css",
+    "main.js": "/seoa-web/static/js/main.6d1554de.js",
+    "static/media/bg-doodle.png": "/seoa-web/static/media/bg-doodle.25c7393f7ecc3a5d324f.png",
+    "static/media/doodle-frame.png": "/seoa-web/static/media/doodle-frame.e659c0e107a8104144e9.png",
+    "static/media/main-baby.png": "/seoa-web/static/media/main-baby.823b2cefe743ea6bc8b1.png",
     "index.html": "/seoa-web/index.html",
-    "main.18fb201e.css.map": "/seoa-web/static/css/main.18fb201e.css.map",
-    "main.7579dd6e.js.map": "/seoa-web/static/js/main.7579dd6e.js.map"
+    "main.c598f17f.css.map": "/seoa-web/static/css/main.c598f17f.css.map",
+    "main.6d1554de.js.map": "/seoa-web/static/js/main.6d1554de.js.map"
   },
   "entrypoints": [
-    "static/css/main.18fb201e.css",
-    "static/js/main.7579dd6e.js"
+    "static/css/main.c598f17f.css",
+    "static/js/main.6d1554de.js"
   ]
 }
