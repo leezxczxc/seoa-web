@@ -1,50 +1,89 @@
-.location-container {
-  padding: 40px 20px;
+.location-section {
+  padding: 60px 20px;
   text-align: center;
-  background-color: #f9f9f9; /* 다른 섹션과 구분을 위해 배경색 추가 */
+  background-color: #f9f9f9;
 }
 
-.location-container h2 {
-  font-size: 1.8rem;
+.location-header {
   margin-bottom: 30px;
 }
 
-.map-image {
-  width: 100%;
-  max-width: 600px; /* 지도가 너무 커지지 않도록 */
-  border: 1px solid #eee;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-}
-
-.map-image:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.location-info {
-  margin-top: 25px;
-}
-
-.location-info .venue-name {
-  font-size: 1.3rem;
-  font-weight: bold;
+.location-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #333;
+  margin-bottom: 8px;
 }
 
-.location-info .address {
-  font-size: 1rem;
+.location-header .venue-address {
+  font-size: 1.1rem;
   color: #555;
-  margin: 8px 0;
 }
 
-.location-info .phone-number {
-    color: #555;
-    margin-bottom: 20px;
+.map-image-container {
+  width: 100%; /* 👇 이 한 줄을 추가해주세요. */
+  max-width: 640px; /* 카카오맵에서 제공한 이미지 너비에 맞춤 */
+  margin: 0 auto 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.location-info .notice {
-  font-size: 0.9rem;
-  color: #e85a71;
-  line-height: 1.6;
+.map-image {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 11px;
+  background-color: #f9f9f9;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+}
+
+.kakao-logo img {
+  width: 72px;
+  height: 16px;
+  display: block;
+}
+
+.map-footer-links a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.link-divider {
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #d0d0d0;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.transport-info {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.transport-method h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.transport-method p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
 }

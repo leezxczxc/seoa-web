@@ -1,32 +1,29 @@
 .main-container {
-  display: flex; /* 요소들을 유연하게 배치 */
-  flex-direction: column; /* 요소들을 세로로 나열 */
-  align-items: center; /* 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 40px 20px;
 }
-/* 사진과 프레임을 감싸는 컨테이너 */
+
 .main-photo-container {
-  position: relative; /* 자식인 프레임이 이 안을 기준으로 움직이도록 설정 */
+  position: relative;
   width: 100%;
-  max-width: 350px; /* 사진의 최대 크기 */
+  max-width: 350px;
   margin-bottom: 20px;
-  /* 여기에 border-radius가 있으면 안 됩니다! */
 }
 
 /* 프레임 역할을 하는 바깥 div */
 .photo-frame {
-  /* 1. 프레임 이미지를 배경으로 지정 */
-  background-size: contain; /* 프레임이 잘리지 않도록 설정 */
+  /* background-image 속성은 Main.js에서 인라인 스타일로 적용되므로 여기서는 제거합니다. */
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   
-  /* 2. 안에 들어올 아기 사진을 중앙에 배치하기 위한 flex 설정 */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* 3. 프레임의 전체 크기 지정 */
   width: 350px;
   height: 350px;
   max-width: 90vw;
@@ -36,25 +33,16 @@
 
 /* 프레임 안에 들어가는 아기 사진 img */
 .baby-photo-inside {
-  /* 4. 프레임의 투명한 영역에 맞게 크기 조절 (80%는 예시이며 조절 가능) */
-  width: 80%;
-  height: 80%;
+  /* 사진 크기를 프레임에 더 잘 맞도록 조절합니다. */
+  width: 85%;
+  height: 85%;
   
-  /* 5. 아기 사진을 원형으로 만듦 */
   border-radius: 50%;
-  object-fit: cover; /* 이미지가 찌그러지지 않고 원을 꽉 채우도록 설정 */
-}
-
-.main-photo img {
-  width: 100%;
-  max-width: 350px; /* 사진 최대 너비 */
-  border-radius: 12px; /* 사진 모서리를 둥글게 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 은은한 그림자 효과 */
-  margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .main-text h1 {
-  font-size: 2rem; /* 폰트 크기 */
+  font-size: 2rem;
   margin: 10px 0;
   color: #333;
 }
@@ -65,12 +53,12 @@
 
 .main-text p {
   font-size: 1.1rem;
-  color: #e85a71; /* 포인트 색상 */
+  color: #e85a71;
   font-weight: bold;
 }
 
 .welcome-message {
     margin-top: 30px;
-    line-height: 1.8; /* 줄 간격 */
+    line-height: 1.8;
     color: #4A4A4A;
 }

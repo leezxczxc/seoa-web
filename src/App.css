@@ -41,16 +41,42 @@
 
 body {
   font-family: 'Gowun Dodum', sans-serif;
-  background-color: #FEEAEC;
-  background-image: url('/public/bg_party.png');
-  background-repeat: repeat;
+  /* 1. 배경색을 따뜻한 크림색으로 변경 */
+  background-color: #FFFBF7; 
+  /* 2. 새로운 배경 이미지를 public 폴더에서 불러옵니다. */
+  background-image: url('../public/bg-doodle.png'); 
+  background-repeat: repeat; /* 이미지가 반복되도록 설정 */
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 600px; /* 모바일 화면처럼 보이도록 최대 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  
+  /* .App 컨테이너에 직접 배경 이미지와 색상을 적용합니다. */
+  /* 이렇게 하면 모바일에서도 배경 이미지가 콘텐츠 영역을 채우게 됩니다. */
+  background-color: #FFFBF7;
+  background-image: url('../public/bg-doodle.png'); 
+  background-repeat: repeat;
+
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 h1, h2 {
   color: #E85A71;
   font-weight: 700;
 }
+
+/* 구분선 스타일 변경 */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 40px 20px;
+}
+
 
 .photo-item {
   border-radius: 12px;
@@ -59,4 +85,12 @@ h1, h2 {
 
 .photo-item:hover {
   transform: rotate(2deg) scale(1.05);
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin: 0 auto;
+  width: 80%;
 }
