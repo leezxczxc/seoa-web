@@ -1,73 +1,78 @@
+/* src/pages/Gallery.css */
+
 .gallery-container {
   padding: 40px 20px;
   text-align: center;
 }
 
-.gallery-container h2 {
-  font-size: 1.8rem;
+.gallery-title-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
-/* 앨범 목록을 위한 그리드 */
-.album-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+.gallery-title-container h2 {
+  position: relative;
+  font-family: 'Gaegu', cursive;
+  font-size: 2.5rem;
+  color: #070707;
+  margin: 0;
+  z-index: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.album-item {
-  position: relative;
-  cursor: pointer;
+/* 1. 붓 터치 효과를 이미지로 변경 */
+.gallery-title-container h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 160%; /* 텍스트보다 넉넉하게 */
+  height: 160%;
+  
+  /* public/images 폴더에 저장한 이미지 파일을 배경으로 사용합니다. */
+  /* background-image: url('/public/brush-stroke.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  transform: translate(-45%, -45%) rotate(-2deg);
+  z-index: -1;
+}
+
+.star-icon {
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+/* 2. 갤러리 그리드를 1열로 수정 */
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1열로 변경 */
+  gap: 20px; /* 세로 간격을 조금 더 줍니다. */
+  
+  /* 사진이 너무 커지지 않도록 최대 너비를 설정하고 중앙 정렬합니다. */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.photo-item {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
 }
 
-.album-item:hover {
+.photo-item:hover {
   transform: scale(1.05);
-}
-
-.album-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 이미지가 잘리지 않고 꽉 차게 */
-}
-
-.album-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-/* 사진들을 위한 그리드 */
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
 }
 
 .photo-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.back-button {
-  display: block;
-  margin-bottom: 20px;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  background-color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
 }

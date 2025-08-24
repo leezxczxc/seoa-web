@@ -20,7 +20,11 @@ function Gallery() {
 
   return (
     <div className="gallery-container">
-      <h2>Our Memories</h2>
+      {/* 1. 제목(h2)을 div로 감싸고, 별 아이콘을 위한 span을 추가합니다. */}
+      <div className="gallery-title-container">
+        <span className="star-icon">✨</span>
+        <h2>Our Memories</h2>
+      </div>
       {/* 기존 photo-grid를 그대로 사용합니다. */}
       <div className="photo-grid">
         {allPhotos.map((photo, index) => (

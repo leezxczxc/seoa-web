@@ -38,6 +38,15 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&amp;display=swap');
+
+@font-face {
+font-family: 'Mitme';
+src: url('/fonts/Mitme.ttf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
 
 body {
   font-family: 'Gowun Dodum', sans-serif;
@@ -52,7 +61,8 @@ body {
 }
 
 .App {
-  max-width: 600px; /* 모바일 화면처럼 보이도록 최대 너비 설정 */
+   /* 모바일 화면처럼 보이도록 최대 너비 설정 */
+  /* max-width: 600px; */
   margin: 0 auto; /* 중앙 정렬 */
   
   /* .App 컨테이너에 직접 배경 이미지와 색상을 적용합니다. */
@@ -62,7 +72,7 @@ body {
   background-repeat: repeat;
 
   min-height: 100vh;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
 }
 
 h1, h2 {

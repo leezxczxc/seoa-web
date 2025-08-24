@@ -12,12 +12,12 @@ function Location() {
     <div className="location-section">
       <div className="location-header">
         <h2>오시는 길</h2>
-        <p className="venue-address">서울 중구 삼일대로 362 (롯데시티호텔 명동)</p>
+        <p className="venue-address">서울 중구 삼일대로 362 (롯데시티호텔 명동 씨카페 27층)</p>
       </div>
 
       <div className="map-image-container">
         <a href={mapLink} target="_blank" rel="noopener noreferrer">
-          <img className="map-image" src={mapImageSrc} alt="롯데시티호텔 명동 위치 지도" />
+          <img className="map-image" src={mapImageSrc} alt="롯데시티호텔 명동 씨카페 위치 지도" />
         </a>
         <div className="map-footer">
           <a href="https://map.kakao.com" target="_blank" rel="noopener noreferrer" className="kakao-logo">
@@ -43,7 +43,7 @@ function Location() {
         <div className="transport-method">
           <h3>🚗 주차 안내</h3>
           <p>호텔 지하주차장 이용 가능 (유료)</p>
-          <p>최초 30분 3,000원 / 추가 10분당 1,000원</p>
+          <p>3시간 무료 / 최초 30분 3,000원, 추가 10분당 1,000원</p>
           <p>만차일 경우, 인근 공영주차장을 이용해 주시기 바랍니다.</p>
         </div>
       </div>

@@ -3,14 +3,17 @@
 import React from 'react';
 import './Main.css';
 import mainVideo from '../assets/baby-main.mp4'; 
-import framePhoto from '../assets/main-frame.png'; 
+import crownFrame from '../assets/crown-with-arrow-frame.png'; 
+import infoBox from '../assets/info-box.png';
 
 function Main() {
   return (
     <div className="main-container">
-      {/* 1. 비디오와 프레임을 겹치기 위한 컨테이너 */}
-      <div className="main-photo-container">
-        {/* 2. 비디오를 먼저 배치합니다. */}
+
+      {/* 2. 비디오와 프레임 오버레이만 남겨 구조를 단순화합니다. */}
+      <div 
+        className="main-photo-container"
+      >
         <video 
           src={mainVideo}
           className="baby-video" 
@@ -20,26 +23,32 @@ function Main() {
           playsInline
           title="아기 서아 영상"
         />
-        {/* 3. 프레임 이미지를 덧씌울 별도의 div를 만듭니다. */}
         <div 
           className="photo-frame-overlay" 
-          style={{ backgroundImage: `url(${framePhoto})` }}
+          style={{ backgroundImage: `url(${crownFrame})` }}
         ></div>
       </div>
-
-      <div className="main-text">
-        <h2>초대합니다</h2>
-        <h1>서아의 첫 번째 생일</h1>
-        <p>2025년 9월 21일 일요일, 오후 12:00</p>
+      
+      {/* 3. 정보 텍스트를 별도의 div로 분리하여 프레임 아래에 배치합니다. */}
+      <div 
+        className="info-box-container"
+        style={{ backgroundImage: `url(${infoBox})` }}
+      >
+        <div className="info-box-text">
+          <h1>First Birthday</h1>
+          <p className="date-text">2025. 09. 21. 일요일 오후 12:00</p>
+          <p className="location-text">롯데시티호텔 명동 씨카페</p>
+        </div>
       </div>
 
+      {/* 기존 환영 문구는 그대로 유지합니다. */}
       <div className="welcome-message">
         <p>
-          사랑으로 자라난 서아의 첫 돌,
+          햇살처럼 자라온 서아,
           <br />
-          소중한 분들을 모시고 조촐한 잔치를 열고자 합니다.
+          사랑의 시간들이 모여 첫 돌을 맞이합니다.
           <br />
-          귀한 걸음 하시어 자리를 빛내주시길 바랍니다.
+          함께해 주신다면 큰 축복이 되겠습니다.
         </p>
       </div>
     </div>
