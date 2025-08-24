@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/seoa-web/static/css/main.7c778658.css",
+    "main.css": "/seoa-web/static/css/main.db35dff0.css",
     "main.js": "/seoa-web/static/js/main.50cabd9d.js",
     "static/media/baby-main.mp4": "/seoa-web/static/media/baby-main.f1843fbad74aa1666259.mp4",
     "static/media/info-box.png": "/seoa-web/static/media/info-box.b43730d2e269d71dff0a.png",
     "static/media/crown-with-arrow-frame.png": "/seoa-web/static/media/crown-with-arrow-frame.37c349991becf4e8df5b.png",
     "static/media/Mitme.ttf": "/seoa-web/static/media/Mitme.94ab8d6461e405d1180e.ttf",
     "index.html": "/seoa-web/index.html",
-    "main.7c778658.css.map": "/seoa-web/static/css/main.7c778658.css.map",
+    "main.db35dff0.css.map": "/seoa-web/static/css/main.db35dff0.css.map",
     "main.50cabd9d.js.map": "/seoa-web/static/js/main.50cabd9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c778658.css",
+    "static/css/main.db35dff0.css",
     "static/js/main.50cabd9d.js"
   ]
 }
